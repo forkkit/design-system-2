@@ -14,7 +14,7 @@ import { getDisplayElementById } from '../../shared/helpers';
 
 ## About Trees
 
-A tree is composed of two core elements `.slds-tree` and `.slds-tree__item`. The tree wrapper, the outer most parent `ul`, will receive the class `.slds-tree`. This class will be used for scoping a tree, which allows for particular styling based on states in which the tree may enter.
+A tree is composed of two core elements `.slds-tree` and `.slds-tree__item`. The tree wrapper, the outermost parent `ul`, will receive the class `.slds-tree`. This class will be used for scoping a tree, which allows for particular styling based on states in which the tree may enter.
 
 A tree will need helper classes added and removed to help structure the layout. Each child node list item needs an `aria-level` attribute with its value being the number of levels deep it is nested to indicate the distinct grouping is nested within.
 
@@ -43,6 +43,7 @@ You can add metatext (see: metatext state) to any tree item, which adds a smalle
 - `aria-expanded` is applied to `treeitem` elements that have child tree nodes. It is set to `true` or `false`
 - `aria-label` is applied to `treeitem` elements that have child tree nodes. Be sure to add any metatext to the label, if applicable
 - `aria-selected="true"` is applied to `treeitem` elements that are selected
+- `aria-disabled="true"` is applied to `treeitem` elements that are disabled. They do not receive a `tabindex`.
 - `tabindex="0"` is applied to the `treeitem` that is in focus
 - `role="group"` is applied to child tree node containers, `ul`
 

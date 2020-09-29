@@ -80,6 +80,13 @@ export const copyIconsMeta = () =>
     })
     .pipe(gulp.dest(distPath()));
 
+export const copyIconsSynonyms = () =>
+  gulp
+    .src('@salesforce-ux/icons/dist/*-icons-metadata.json', {
+      cwd: paths.node_modules
+    })
+    .pipe(gulp.dest(distPath('metadata/icons')));
+
 export const copyFonts = () =>
   gulp
     .src('fonts/**/*', {
@@ -147,6 +154,14 @@ export const copyUtilityReleaseNotes = () =>
       cwd: path.resolve(paths.ui)
     })
     .pipe(gulp.dest(distPath('__internal/release-notes')));
+
+export const copyStylingHooksMetadata = () =>
+  gulp
+    .src('metadata/**', {
+      base: path.resolve(paths.generated),
+      cwd: path.resolve(paths.generated)
+    })
+    .pipe(gulp.dest(distPath()));
 
 /*
  * ==================

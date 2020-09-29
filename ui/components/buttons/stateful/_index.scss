@@ -14,17 +14,29 @@
  */
 .slds-button_neutral.slds-is-selected,
 .slds-button--neutral.slds-is-selected {
-  border-color: transparent;
+  // @todo re-evaluate Styling Hooks reassignment
   background-color: transparent;
 
+  // @todo re-evaluate Styling Hooks reassignment
+  border-color: transparent;
+
+  /**
+   * Styling Hooks uses button-neutral identifier instead of button_stateful
+   * because stateful is a neutral variant underneath the hood and therefore
+   * should pick up any styling customizations made to the brand variant.
+   */
   &:hover:not([disabled]),
   &:focus:not([disabled]) {
-    border-color: $button-color-border-primary;
-    background-color: $color-background-button-default-hover;
+    // @todo re-evaluate Styling Hooks reassignment
+    background-color: var(--sds-c-button-neutral-color-background, $color-background-button-default-hover);
+
+    // @todo re-evaluate Styling Hooks reassignment
+    border-color: var(--sds-c-button-neutral-color-border-hover, $color-border-primary);
   }
 
   &:active:not([disabled]) {
-    background-color: $color-background-button-default-active;
+    // @todo re-evaluate Styling Hooks reassignment
+    background-color: var(--sds-c-button-neutral-color-background-active, $color-background-button-default-active);
   }
 }
 

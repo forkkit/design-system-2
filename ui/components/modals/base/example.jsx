@@ -3,8 +3,10 @@
 
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import ButtonIcon from '../../button-icons/';
 import classNames from 'classnames';
+import uniqueId from 'lodash.uniqueid';
+import Heading from '../../../shared/heading';
+import ButtonIcon from '../../button-icons/';
 
 /// ///////////////////////////////////////////
 // Partial(s)
@@ -70,6 +72,17 @@ export let ModalContent = props => (
   </div>
 );
 
+export let ModalMenu = ({ id, children }) => (
+  <div className="slds-modal__menu" id={id}>
+    {children}
+  </div>
+);
+
+ModalMenu.propTypes = {
+  id: PropTypes.string.isRequired,
+  children: PropTypes.node
+};
+
 export let ModalFooter = props => (
   <footer className={classNames('slds-modal__footer', props.className)}>
     {props.children}
@@ -80,12 +93,12 @@ export let ModalFooter = props => (
 // State Constructor(s)
 /// ///////////////////////////////////////////
 
-let Taglines = props => (
+export let Taglines = props => (
   <Backdrop>
     <Modal aria-labelledby="modal-heading-01">
       <ModalHeader>
         <h2 id="modal-heading-01" className="slds-modal__title slds-hyphenate">
-          Modal Header
+          Modal header
         </h2>
         <p className="slds-m-top_x-small">
           Here&rsquo;s a tagline if you need it. It is allowed to extend across
@@ -120,7 +133,7 @@ let Taglines = props => (
   </Backdrop>
 );
 
-let ModalSizes = props => (
+export let ModalSizes = props => (
   <Backdrop>
     <Modal
       className={classNames(
@@ -132,7 +145,7 @@ let ModalSizes = props => (
     >
       <ModalHeader>
         <h2 id="modal-heading-01" className="slds-modal__title slds-hyphenate">
-          Modal Header
+          Modal header
         </h2>
       </ModalHeader>
       <ModalContent className="slds-p-around_medium">
@@ -165,12 +178,12 @@ ModalSizes.propTypes = {
   size: PropTypes.oneOf(['small', 'medium', 'large'])
 };
 
-let Directional = props => (
+export let Directional = props => (
   <Backdrop>
     <Modal aria-labelledby="modal-heading-01">
       <ModalHeader>
         <h2 id="modal-heading-01" className="slds-modal__title slds-hyphenate">
-          Modal Header
+          Modal header
         </h2>
       </ModalHeader>
       <ModalContent className="slds-p-around_medium">
@@ -203,7 +216,7 @@ let Directional = props => (
   </Backdrop>
 );
 
-let Headless = props => (
+export let Headless = props => (
   <Backdrop>
     <Modal aria-label="Meaningful description of the modal content">
       <ModalHeader className="slds-modal__header_empty" />
@@ -233,12 +246,12 @@ let Headless = props => (
   </Backdrop>
 );
 
-let Footless = props => (
+export let Footless = props => (
   <Backdrop>
     <Modal aria-labelledby="modal-heading-01">
       <ModalHeader>
         <h2 id="modal-heading-01" className="slds-modal__title slds-hyphenate">
-          Modal Header
+          Modal header
         </h2>
       </ModalHeader>
       <ModalContent className="slds-p-around_medium">
@@ -263,12 +276,12 @@ let Footless = props => (
   </Backdrop>
 );
 
-let HiddenFooter = props => (
+export let HiddenFooter = props => (
   <Backdrop>
     <Modal aria-labelledby="modal-heading-01">
       <ModalHeader>
         <h2 id="modal-heading-01" className="slds-modal__title slds-hyphenate">
-          Modal Header
+          Modal header
         </h2>
       </ModalHeader>
       <ModalContent className="slds-modal__content_has-hidden-footer slds-p-around_medium">
@@ -294,6 +307,48 @@ let HiddenFooter = props => (
   </Backdrop>
 );
 
+export const Menu = () => {
+  const uniqueIDHeading = uniqueId('modal-heading-unique-id-');
+  const uniqueIDContent = uniqueId('modal-content-unique-id-');
+
+  return (
+    <Backdrop>
+      <Modal
+        aria-labelledby={uniqueIDHeading}
+        aria-describedby={uniqueIDContent}
+      >
+        <ModalHeader>
+          <Heading
+            id={uniqueIDHeading}
+            className="slds-modal__title slds-hyphenate"
+          >
+            Modal header
+          </Heading>
+        </ModalHeader>
+        <ModalMenu className="slds-p-around_medium" id={uniqueIDContent}>
+          <p>
+            Sit nulla est ex deserunt exercitation anim occaecat. Nostrud
+            ullamco deserunt aute id consequat veniam incididunt duis in sint
+            irure nisi. Mollit officia cillum Lorem ullamco minim nostrud elit
+            officia tempor esse quis. Cillum sunt ad dolore quis aute consequat
+            ipsum magna exercitation reprehenderit magna. Tempor cupidatat
+            consequat elit dolor adipisicing.
+          </p>
+          <p>
+            Dolor eiusmod sunt ex incididunt cillum quis nostrud velit duis sit
+            officia. Lorem aliqua enim laboris do dolor eiusmod officia. Mollit
+            incididunt nisi consectetur esse laborum eiusmod pariatur proident.
+            Eiusmod et adipisicing culpa deserunt nostrud ad veniam nulla aute
+            est. Labore esse esse cupidatat amet velit id elit consequat minim
+            ullamco mollit enim excepteur ea.
+          </p>
+        </ModalMenu>
+        <ModalFooter className="slds-hide" />
+      </Modal>
+    </Backdrop>
+  );
+};
+
 /// ///////////////////////////////////////////
 // Export
 /// ///////////////////////////////////////////
@@ -303,7 +358,7 @@ const defaultComponent = (
     <Modal aria-labelledby="modal-heading-01">
       <ModalHeader>
         <h2 id="modal-heading-01" className="slds-modal__title slds-hyphenate">
-          Modal Header
+          Modal header
         </h2>
       </ModalHeader>
       <ModalContent className="slds-p-around_medium">
@@ -388,6 +443,12 @@ export const examples = [
     label: 'Directional',
     demoStyles: exampleDemoStyles,
     element: <Directional />
+  },
+  {
+    id: 'menu',
+    label: 'Menu',
+    demoStyles: exampleDemoStyles,
+    element: <Menu />
   }
 ];
 

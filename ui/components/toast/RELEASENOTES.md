@@ -4,6 +4,12 @@
 
 <!-- ## [Unreleased] -->
 
+## 2.13.0
+
+### Added
+
+- Enabled styling hooks for toast. See toast's styling hooks overview table for a full listing of the currently available hooks.
+
 ## 2.8.0
 
 ### Fixed

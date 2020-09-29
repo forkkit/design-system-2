@@ -20,7 +20,8 @@ export const ToggleButton = props => (
     <button
       {...props}
       className="slds-button doc-toggle-code__button"
-      aria-live="polite"
+      aria-pressed={props.open}
+      aria-label="Show Code"
     >
       {props.open ? 'Hide ' : 'Show '} Code
     </button>
@@ -41,7 +42,7 @@ class CodeBlock extends Component {
   }
 
   getCode(lines) {
-    const { children } = this.props;
+    const { toggleCode, children } = this.props;
     try {
       React.Children.only(children);
     } catch (error) {
@@ -53,7 +54,8 @@ class CodeBlock extends Component {
     const formatted = beautify(markup);
     let code;
 
-    if (lines) {
+    // Only reduce if # of lines is specified and the codeblock is meant to be toggled
+    if (lines && toggleCode) {
       code = formatted
         .split(/\n/g)
         .reduce((codeLines, codeLine, i) =>
@@ -72,7 +74,7 @@ class CodeBlock extends Component {
   }
 
   render() {
-    const { language, toggleCode = true } = this.props;
+    const { language, toggleCode } = this.props;
     const { open } = this.state;
     const codeLines = open ? null : 3;
 
@@ -80,7 +82,12 @@ class CodeBlock extends Component {
       <div className="docs-codeblock-source">
         <ul className="docs-codeblock__action-bar">
           <li>
-            <Copy key="copy" className="site-code_copy" text={this.getCode()} />
+            <Copy
+              key="copy"
+              className="slds-button_icon-container"
+              containerClassName="site-code_copy"
+              text={this.getCode()}
+            />
           </li>
           {toggleCode && (
             <li>
@@ -118,7 +125,8 @@ CodeBlock.propTypes = {
 };
 
 CodeBlock.defaultProps = {
-  language: 'html'
+  language: 'html',
+  toggleCode: true
 };
 
 export default CodeBlock;

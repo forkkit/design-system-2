@@ -1,4 +1,4 @@
-Please refer to our [Commit Guidelines](https://github.com/salesforce-ux/design-system-internal/blob/spring-19/CONTRIBUTING.md#commit-guidelines) for documenting changes.
+Please refer to our [Commit Guidelines](CONTRIBUTING.md#commit-guidelines) for documenting changes.
 
 **Changes proposed in this pull request:**
 
@@ -11,6 +11,7 @@ Please refer to our [Commit Guidelines](https://github.com/salesforce-ux/design-
 * [ ] Tested on **desktop** (see [supported browsers](https://www.lightningdesignsystem.com/faq/#what-browsers-are-supported))
 * [ ] Tested on **mobile** (for responsive or mobile-specific features)
 * [ ] Confirm **Accessibility**
+* [ ] Confirm **RTL**
 
 #### Feature
 

@@ -4,6 +4,25 @@
 
 <!-- ## [Unreleased] -->
 
+## 2.13.3
+
+### Fixed
+
+- Fixed incorrect styling hooks on footer.
+
+## 2.13.1
+
+### Fixed
+
+- Fixed issue where mobile text size wasn't accurately sized.
+- Small improvements to the UI text.
+
+## 2.13.0
+
+### Added
+
+- Enabled styling hooks for modal. See modal's styling hooks overview table for a full listing of the currently available hooks.
+
 ## 2.11.7
 
 ### Added

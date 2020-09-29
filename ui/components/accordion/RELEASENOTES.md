@@ -4,6 +4,16 @@
 
 <!-- ## [Unreleased] -->
 
+## 2.13.0
+
+### Added
+
+- Enabled styling hooks for accordion. See accordion's styling hooks overview table for a full listing of the currently available hooks.
+
+### Changed
+
+- Updated heading elements from h3 to h2.
+
 ## 2.11.7
 
 ### Changed

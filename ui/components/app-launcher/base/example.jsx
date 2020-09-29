@@ -36,7 +36,7 @@ export let AppLauncherModal = props => (
   >
     <ModalHeader className="slds-grid slds-grid_align-spread slds-grid_vertical-align-center">
       <h2 id="header43" className="slds-text-heading_medium">
-        App Launcher
+        App launcher
       </h2>
       <div className="slds-app-launcher__header-search">
         <div className="slds-form-element">
@@ -280,7 +280,7 @@ export const appTiles = [
     figureClass: 'slds-icon-custom-50',
     grabbed: false,
     initials: 'CS',
-    label: 'Customer Support Communitiy'
+    label: 'Customer Support Community'
   }
 ];
 

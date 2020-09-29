@@ -2,6 +2,7 @@
 // Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license
 
 import React from 'react';
+import classnames from 'classnames';
 import SvgIcon from '../../ui/shared/svg-icon/';
 
 const isCopySupported = () =>
@@ -59,29 +60,36 @@ class Copy extends React.PureComponent {
 
   renderButton() {
     const { copied } = this.state;
-    const title = copied ? 'Copied' : 'Copy to Clipboard';
+    const assistiveText = copied ? 'Copied' : '';
     return (
-      <button
-        className="slds-button slds-button_icon-container doc-copy-to-clipboard"
-        onClick={() => this.copyToClipboard()}
-        title={title}
-      >
-        <SvgIcon
-          sprite="utility"
-          symbol={copied ? 'check' : 'copy_to_clipboard'}
-          className="slds-button__icon"
-        />
+      <React.Fragment>
+        <button
+          className={classnames(
+            'doc-copy-to-clipboard',
+            'slds-button',
+            this.props.className
+          )}
+          onClick={() => this.copyToClipboard()}
+          aria-label="Copy to Clipboard"
+          title="Copy to Clipboard"
+        >
+          <SvgIcon
+            sprite="utility"
+            symbol={copied ? 'check' : 'copy_to_clipboard'}
+            className="slds-button__icon"
+          />
+        </button>
         <span aria-live="polite" className="slds-assistive-text">
-          {title}
+          {assistiveText}
         </span>
-      </button>
+      </React.Fragment>
     );
   }
 
   render() {
     if (!this.state.show) return null;
     return (
-      <div className={this.props.className}>
+      <span className={this.props.containerClassName}>
         {this.renderButton()}
         <pre
           aria-hidden="true"
@@ -90,7 +98,7 @@ class Copy extends React.PureComponent {
             this.copyNode = node;
           }}
         />
-      </div>
+      </span>
     );
   }
 }

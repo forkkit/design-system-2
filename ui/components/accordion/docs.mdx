@@ -1,6 +1,7 @@
 import CodeView from '../../../shared/components/CodeView';
 import Blockquote from '../../../shared/components/Blockquote';
 import { getDisplayElementById } from '../../shared/helpers';
+import StylingHooksTable from '../../../shared/components/StylingHooksTable';
 import * as Base from './base/example';
 
 <div className="doc lead">
@@ -22,9 +23,8 @@ Availability of accordion content to assistive technology requires the use of `a
 There are additional accessibility considerations within the [Buttons](/components/buttons) and [Menus](/components/menus).
 
 ## Default
-<CodeView>
-  {Base.default}
-</CodeView>
+
+<CodeView>{Base.default}</CodeView>
 
 ### Structure and Implementation
 
@@ -34,42 +34,28 @@ The content itself is contained within a div with the class `slds-accordion__con
 
 Content visibility is toggled via a [Button](/components/buttons) in the H3 heading. To make accordion content visible, the section is given the class `slds-is-open`, the button is changed from `aria-expanded="false"` to `aria-expanded="true"`, and the hidden attribute is removed from the content div.
 
-
-## States
-
-### Section 1 - Open
-<CodeView>
-  { getDisplayElementById(Base.states, 'section-one-open') }
-</CodeView>
-
-### Section 2 - Open
-<CodeView>
-  { getDisplayElementById(Base.states, 'section-two-open') }
-</CodeView>
-
-### Section 3 - Open
-<CodeView>
-  { getDisplayElementById(Base.states, 'section-three-open') }
-</CodeView>
-
-### Multiple Sections - Open
-<CodeView>
-  { getDisplayElementById(Base.states, 'multiple-sections-open') }
-</CodeView>
-
 ## Examples
 
 ### With Action Overflow Menu
+
 <CodeView>
-  { getDisplayElementById(Base.examples, 'has-action-overflow') }
+  {getDisplayElementById(Base.examples, 'has-action-overflow')}
 </CodeView>
 
 ### In a Card
-<CodeView>
-  { getDisplayElementById(Base.examples, 'styled') }
-</CodeView>
+
+<CodeView>{getDisplayElementById(Base.examples, 'styled')}</CodeView>
 
 ### Nested
+
+<CodeView>{getDisplayElementById(Base.examples, 'nested-accordions')}</CodeView>
+
+### Heading with Truncation
+
 <CodeView>
-  { getDisplayElementById(Base.examples, 'nested-accordions') }
+  {getDisplayElementById(Base.examples, 'long-heading-truncated')}
 </CodeView>
+
+## Styling Hooks Overview
+
+<StylingHooksTable name="accordion" type="component" />

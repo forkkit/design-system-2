@@ -1,5 +1,6 @@
 import * as Base from './base/example.jsx';
 import CodeView from '../../../shared/components/CodeView';
+import StylingHooksTable from '../../../shared/components/StylingHooksTable';
 import { getDisplayElementById, getDemoStylesById } from '../../shared/helpers';
 import { MobileNotice, MobileBlurb } from '../../shared/doc-text';
 
@@ -111,3 +112,7 @@ Modals, by definition, trap focus. This means that if a user presses Tab or Shif
 <CodeView isViewport demoStyles={getDemoStylesById(Base.examples, 'large')}>
   {getDisplayElementById(Base.examples, 'large')}
 </CodeView>
+
+## Styling Hooks Overview
+
+<StylingHooksTable name="modals" type="component" />

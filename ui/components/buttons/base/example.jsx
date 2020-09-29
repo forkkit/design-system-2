@@ -11,6 +11,7 @@ export let Button = props => {
   const {
     className,
     disabled,
+    isReset,
     isBrand,
     isNeutral,
     isOutlineBrand,
@@ -30,6 +31,7 @@ export let Button = props => {
   var classNameList = classNames(
     'slds-button',
     {
+      'slds-button_reset': isReset,
       'slds-button_brand': isBrand,
       'slds-button_neutral': isNeutral,
       'slds-button_outline-brand': isOutlineBrand,
@@ -53,10 +55,10 @@ export let Button = props => {
           {props.children}
         </a>
       ) : (
-        <button className={classNameList} disabled={disabled} {...rest}>
-          {props.children}
-        </button>
-      )}
+          <button className={classNameList} disabled={disabled} {...rest}>
+            {props.children}
+          </button>
+        )}
     </React.Fragment>
   );
 };
@@ -66,6 +68,7 @@ Button.displayName = 'Button';
 Button.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
+  isReset: PropTypes.bool,
   isBrand: PropTypes.bool,
   isNeutral: PropTypes.bool,
   isOutlineBrand: PropTypes.bool,
@@ -78,7 +81,8 @@ Button.propTypes = {
   isFirst: PropTypes.bool,
   isMiddle: PropTypes.bool,
   isLast: PropTypes.bool,
-  use: CannotBeSetWith('disabled', PropTypes.oneOf(['a']))
+  use: CannotBeSetWith('disabled', PropTypes.oneOf(['a'])),
+  children: PropTypes.node
 };
 
 /// ////////////////////////////////////////
@@ -221,6 +225,19 @@ export let examples = [
     element: (
       <Button use="a" isStretch isNeutral>
         Stretched Neutral Link
+      </Button>
+    )
+  },
+  /**
+   * This is not best practice, use .slds-button_full-width or .slds-button_stretch
+   * instead, this accounts for test coverage of legacy overrides by customers.
+   */
+  {
+    id: 'base-centering',
+    label: 'Base Centering',
+    element: (
+      <Button isNeutral style={{ width: '400px' }}>
+        I should be centered
       </Button>
     )
   }

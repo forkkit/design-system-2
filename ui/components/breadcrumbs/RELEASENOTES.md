@@ -3,16 +3,22 @@
 # Breadcrumbs Release Notes
 
 <!-- ## [Unreleased] -->
+
+## 2.13.0
+
+- Enabled styling hooks for breadcrumb. See breadcrumb's styling hooks overview table for a full listing of the currently available hooks.
+
 ## 2.8.4
 
 ### Fixed
+
 - Adjusted typographic styling for breadcrumb items.
 
 ## 2.8.0
 
 ### Changed
 
-- Added bold font weight to '.slds-breadcrumb__item`.
+- Added bold font weight to '.slds-breadcrumb\_\_item`.
 
 ### Removed
 

@@ -16,10 +16,10 @@
   overflow: hidden;
   display: inline-block;
   vertical-align: middle;
-  border-radius: $border-radius-medium;
+  border-radius: var(--sds-c-avatar-radius-border, $border-radius-medium);
   line-height: $line-height-reset;
   font-size: $font-size-heading-small;
-  color: $color-text-inverse;
+  color: var(--sds-c-avatar-text-color, $color-text-inverse);
 
   &:hover,
   &:focus:hover {
@@ -198,6 +198,7 @@
  */
 .slds-avatar__initials {
   @include absolute-center;
+  color: var(--sds-c-avatar-initials-text-color);
   height: 100%;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
 
@@ -207,7 +208,7 @@
   }
 
   &:hover {
-    color: $color-text-inverse;
+    color: var(--sds-c-avatar-initials-text-color-hover, $color-text-inverse);
     cursor: default;
   }
 }

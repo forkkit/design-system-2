@@ -29,12 +29,12 @@ exports[`Combobox with a Dialog dropdown renders a closed, readonly dialog combo
           <input
             aria-autocomplete={null}
             aria-controls="popover-id-01"
-            autoComplete="off"
+            autocomplete="off"
             className="slds-input slds-combobox__input"
             id="combobox-id-01"
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder="Select an Option"
+            placeholder="Select an Option…"
             readOnly={true}
             role="textbox"
             type="text"
@@ -114,12 +114,12 @@ exports[`Combobox with a Dialog dropdown renders an open, readonly dialog combob
           <input
             aria-autocomplete={null}
             aria-controls="popover-id-01"
-            autoComplete="off"
+            autocomplete="off"
             className="slds-input slds-combobox__input"
             id="combobox-id-01"
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder="Select an Option"
+            placeholder="Select an Option…"
             readOnly={true}
             role="textbox"
             type="text"
@@ -178,7 +178,7 @@ exports[`render combobox render autocomplete combobox with mutliple selections 1
     className="slds-form-element__label"
     htmlFor="combobox-id-01"
   >
-    Relate to
+    Relate To
   </label>
   <div
     className="slds-form-element__control"
@@ -199,7 +199,7 @@ exports[`render combobox render autocomplete combobox with mutliple selections 1
           <input
             aria-autocomplete="list"
             aria-controls="listbox-id-01"
-            autoComplete="off"
+            autocomplete="off"
             className="slds-input slds-combobox__input"
             id="combobox-id-01"
             onBlur={[Function]}
@@ -392,11 +392,6 @@ exports[`render combobox render autocomplete combobox with mutliple selections 1
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -427,11 +422,6 @@ exports[`render combobox render autocomplete combobox with mutliple selections 1
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -449,7 +439,7 @@ exports[`render combobox render autocomplete combobox with single selection 1`] 
     className="slds-form-element__label"
     htmlFor="combobox-id-01"
   >
-    Relate to
+    Relate To
   </label>
   <div
     className="slds-form-element__control"
@@ -470,7 +460,7 @@ exports[`render combobox render autocomplete combobox with single selection 1`] 
           <input
             aria-autocomplete="list"
             aria-controls="listbox-id-01"
-            autoComplete="off"
+            autocomplete="off"
             className="slds-input slds-combobox__input slds-combobox__input-value"
             defaultValue="GenePoint"
             id="combobox-id-01"
@@ -640,7 +630,7 @@ exports[`render combobox render autocomplete entity combobox 1`] = `
     className="slds-form-element__label"
     htmlFor="combobox-id-01"
   >
-    Relate to
+    Relate To
   </label>
   <div
     className="slds-form-element__control"
@@ -661,7 +651,7 @@ exports[`render combobox render autocomplete entity combobox 1`] = `
           <input
             aria-autocomplete="list"
             aria-controls="listbox-id-01"
-            autoComplete="off"
+            autocomplete="off"
             className="slds-input slds-combobox__input slds-has-focus"
             id="combobox-id-01"
             onBlur={[Function]}
@@ -811,7 +801,7 @@ exports[`render combobox render autocomplete entity combobox displaying options 
     className="slds-form-element__label"
     htmlFor="combobox-id-01"
   >
-    Relate to
+    Relate To
   </label>
   <div
     className="slds-form-element__control"
@@ -833,7 +823,7 @@ exports[`render combobox render autocomplete entity combobox displaying options 
             aria-activedescendant="option1"
             aria-autocomplete="list"
             aria-controls="listbox-id-01"
-            autoComplete="off"
+            autocomplete="off"
             className="slds-input slds-combobox__input slds-has-focus slds-combobox__input-value"
             defaultValue="salesforce"
             id="combobox-id-01"
@@ -1095,7 +1085,7 @@ exports[`render combobox render autocomplete entity combobox with mutliple selec
     className="slds-form-element__label"
     htmlFor="combobox-id-01"
   >
-    Relate to
+    Relate To
   </label>
   <div
     className="slds-form-element__control"
@@ -1116,7 +1106,7 @@ exports[`render combobox render autocomplete entity combobox with mutliple selec
           <input
             aria-autocomplete="list"
             aria-controls="listbox-id-01"
-            autoComplete="off"
+            autocomplete="off"
             className="slds-input slds-combobox__input"
             id="combobox-id-01"
             onBlur={[Function]}
@@ -1309,11 +1299,6 @@ exports[`render combobox render autocomplete entity combobox with mutliple selec
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -1362,11 +1347,6 @@ exports[`render combobox render autocomplete entity combobox with mutliple selec
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -1384,7 +1364,7 @@ exports[`render combobox render autocomplete entity combobox with single selecti
     className="slds-form-element__label"
     htmlFor="combobox-id-01"
   >
-    Relate to
+    Relate To
   </label>
   <div
     className="slds-form-element__control"
@@ -1423,13 +1403,13 @@ exports[`render combobox render autocomplete entity combobox with single selecti
           <input
             aria-autocomplete={null}
             aria-controls="listbox-id-01"
-            autoComplete="off"
+            autocomplete="off"
             className="slds-input slds-combobox__input slds-combobox__input-value"
             defaultValue="Salesforce.com, Inc."
             id="combobox-id-01"
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder="Select an Option"
+            placeholder="Select an Option…"
             readOnly={true}
             role="textbox"
             tabIndex="-1"
@@ -1437,6 +1417,7 @@ exports[`render combobox render autocomplete entity combobox with single selecti
           />
           <button
             className="slds-button slds-button_icon slds-input__icon slds-input__icon_right"
+            onClick={[Function]}
             title="Remove selected option"
           >
             <svg
@@ -1576,7 +1557,7 @@ exports[`render combobox render base combobox 1`] = `
     className="slds-form-element__label"
     htmlFor="combobox-id-01"
   >
-    Relate to
+    Relate To
   </label>
   <div
     className="slds-form-element__control"
@@ -1597,13 +1578,13 @@ exports[`render combobox render base combobox 1`] = `
           <input
             aria-autocomplete={null}
             aria-controls="listbox-id-01"
-            autoComplete="off"
+            autocomplete="off"
             className="slds-input slds-combobox__input slds-has-focus slds-combobox__input-value"
             defaultValue="Accounts"
             id="combobox-id-01"
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder="Select an Option"
+            placeholder="Select an Option…"
             readOnly={true}
             role="textbox"
             type="text"
@@ -1864,7 +1845,7 @@ exports[`render combobox render combobox with displaying options based on user i
     className="slds-form-element__label"
     htmlFor="combobox-id-01"
   >
-    Relate to
+    Relate To
   </label>
   <div
     className="slds-form-element__control"
@@ -1886,7 +1867,7 @@ exports[`render combobox render combobox with displaying options based on user i
             aria-activedescendant="option1"
             aria-autocomplete="list"
             aria-controls="listbox-id-01"
-            autoComplete="off"
+            autocomplete="off"
             className="slds-input slds-combobox__input slds-has-focus slds-combobox__input-value"
             defaultValue="opp"
             id="combobox-id-01"
@@ -2035,7 +2016,7 @@ exports[`render combobox render grouped combobox 1`] = `
     className="slds-form-element__label"
     htmlFor="combobox-id-01"
   >
-    Relate to
+    Relate To
   </label>
   <div
     className="slds-form-element__control"
@@ -2074,10 +2055,10 @@ exports[`render combobox render grouped combobox 1`] = `
                   <input
                     aria-autocomplete={null}
                     aria-controls="objectswitcher-listbox-id-01"
-                    autoComplete="off"
+                    autocomplete="off"
                     className="slds-input slds-combobox__input slds-combobox__input-value"
                     defaultValue="Accounts"
-                    id="text-input-id-1"
+                    id="text-input-unique-id-37"
                     onBlur={[Function]}
                     onFocus={[Function]}
                     placeholder=" "
@@ -2356,7 +2337,7 @@ exports[`render combobox render grouped combobox 1`] = `
             <input
               aria-autocomplete="list"
               aria-controls="listbox-id-01"
-              autoComplete="off"
+              autocomplete="off"
               className="slds-input slds-combobox__input slds-has-focus"
               id="combobox-id-01"
               onBlur={[Function]}
@@ -2603,7 +2584,7 @@ exports[`render combobox render grouped combobox displaying options based on use
     className="slds-form-element__label"
     htmlFor="combobox-id-01"
   >
-    Relate to
+    Relate To
   </label>
   <div
     className="slds-form-element__control"
@@ -2642,10 +2623,10 @@ exports[`render combobox render grouped combobox displaying options based on use
                   <input
                     aria-autocomplete={null}
                     aria-controls="objectswitcher-listbox-id-01"
-                    autoComplete="off"
+                    autocomplete="off"
                     className="slds-input slds-combobox__input slds-combobox__input-value"
                     defaultValue="Accounts"
-                    id="text-input-id-1"
+                    id="text-input-unique-id-39"
                     onBlur={[Function]}
                     onFocus={[Function]}
                     placeholder=" "
@@ -2924,7 +2905,7 @@ exports[`render combobox render grouped combobox displaying options based on use
             <input
               aria-autocomplete="list"
               aria-controls="listbox-id-01"
-              autoComplete="off"
+              autocomplete="off"
               className="slds-input slds-combobox__input slds-has-focus slds-combobox__input-value"
               defaultValue="salesforce"
               id="combobox-id-01"
@@ -3187,7 +3168,7 @@ exports[`render combobox render grouped combobox with selections made in collaps
     className="slds-form-element__label"
     htmlFor="combobox-id-01"
   >
-    Relate to
+    Relate To
   </label>
   <div
     className="slds-form-element__control"
@@ -3226,10 +3207,10 @@ exports[`render combobox render grouped combobox with selections made in collaps
                   <input
                     aria-autocomplete={null}
                     aria-controls="objectswitcher-listbox-id-01"
-                    autoComplete="off"
+                    autocomplete="off"
                     className="slds-input slds-combobox__input slds-combobox__input-value"
                     defaultValue="Accounts"
-                    id="text-input-id-1"
+                    id="text-input-unique-id-41"
                     onBlur={[Function]}
                     onFocus={[Function]}
                     placeholder=" "
@@ -3508,7 +3489,7 @@ exports[`render combobox render grouped combobox with selections made in collaps
             <input
               aria-autocomplete="list"
               aria-controls="listbox-id-01"
-              autoComplete="off"
+              autocomplete="off"
               className="slds-input slds-combobox__input"
               id="combobox-id-01"
               onBlur={[Function]}
@@ -3809,11 +3790,6 @@ exports[`render combobox render grouped combobox with selections made in collaps
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -3862,11 +3838,6 @@ exports[`render combobox render grouped combobox with selections made in collaps
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -3915,11 +3886,6 @@ exports[`render combobox render grouped combobox with selections made in collaps
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -3968,11 +3934,6 @@ exports[`render combobox render grouped combobox with selections made in collaps
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -4021,11 +3982,6 @@ exports[`render combobox render grouped combobox with selections made in collaps
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -4074,11 +4030,6 @@ exports[`render combobox render grouped combobox with selections made in collaps
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -4127,11 +4078,6 @@ exports[`render combobox render grouped combobox with selections made in collaps
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -4180,11 +4126,6 @@ exports[`render combobox render grouped combobox with selections made in collaps
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -4202,7 +4143,7 @@ exports[`render combobox render grouped combobox with selections made in expande
     className="slds-form-element__label"
     htmlFor="combobox-id-01"
   >
-    Relate to
+    Relate To
   </label>
   <div
     className="slds-form-element__control"
@@ -4241,10 +4182,10 @@ exports[`render combobox render grouped combobox with selections made in expande
                   <input
                     aria-autocomplete={null}
                     aria-controls="objectswitcher-listbox-id-01"
-                    autoComplete="off"
+                    autocomplete="off"
                     className="slds-input slds-combobox__input slds-combobox__input-value"
                     defaultValue="Accounts"
-                    id="text-input-id-1"
+                    id="text-input-unique-id-43"
                     onBlur={[Function]}
                     onFocus={[Function]}
                     placeholder=" "
@@ -4523,7 +4464,7 @@ exports[`render combobox render grouped combobox with selections made in expande
             <input
               aria-autocomplete="list"
               aria-controls="listbox-id-01"
-              autoComplete="off"
+              autocomplete="off"
               className="slds-input slds-combobox__input slds-has-focus"
               id="combobox-id-01"
               onBlur={[Function]}
@@ -4813,11 +4754,6 @@ exports[`render combobox render grouped combobox with selections made in expande
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -4866,11 +4802,6 @@ exports[`render combobox render grouped combobox with selections made in expande
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -4919,11 +4850,6 @@ exports[`render combobox render grouped combobox with selections made in expande
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -4972,11 +4898,6 @@ exports[`render combobox render grouped combobox with selections made in expande
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -5025,11 +4946,6 @@ exports[`render combobox render grouped combobox with selections made in expande
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -5078,11 +4994,6 @@ exports[`render combobox render grouped combobox with selections made in expande
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -5131,11 +5042,6 @@ exports[`render combobox render grouped combobox with selections made in expande
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -5184,11 +5090,6 @@ exports[`render combobox render grouped combobox with selections made in expande
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -5206,7 +5107,7 @@ exports[`render combobox render multiple selections in a closed combobox 1`] = `
     className="slds-form-element__label"
     htmlFor="combobox-id-01"
   >
-    Relate to
+    Relate To
   </label>
   <div
     className="slds-form-element__control"
@@ -5227,13 +5128,13 @@ exports[`render combobox render multiple selections in a closed combobox 1`] = `
           <input
             aria-autocomplete={null}
             aria-controls="listbox-id-01"
-            autoComplete="off"
+            autocomplete="off"
             className="slds-input slds-combobox__input slds-combobox__input-value"
             defaultValue="2 Options Selected"
             id="combobox-id-01"
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder="Select an Option"
+            placeholder="Select an Option…"
             readOnly={true}
             role="textbox"
             type="text"
@@ -5547,11 +5448,6 @@ exports[`render combobox render multiple selections in a closed combobox 1`] = `
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -5582,11 +5478,6 @@ exports[`render combobox render multiple selections in a closed combobox 1`] = `
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -5604,7 +5495,7 @@ exports[`render combobox render single selection in an open combobox 1`] = `
     className="slds-form-element__label"
     htmlFor="combobox-id-01"
   >
-    Relate to
+    Relate To
   </label>
   <div
     className="slds-form-element__control"
@@ -5626,13 +5517,13 @@ exports[`render combobox render single selection in an open combobox 1`] = `
             aria-activedescendant="option1"
             aria-autocomplete={null}
             aria-controls="listbox-id-01"
-            autoComplete="off"
+            autocomplete="off"
             className="slds-input slds-combobox__input slds-has-focus slds-combobox__input-value"
             defaultValue="Accounts"
             id="combobox-id-01"
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder="Select an Option"
+            placeholder="Select an Option…"
             readOnly={true}
             role="textbox"
             type="text"
@@ -5907,7 +5798,7 @@ exports[`render combobox renders autocomplete combobox 1`] = `
     className="slds-form-element__label"
     htmlFor="combobox-id-01"
   >
-    Relate to
+    Relate To
   </label>
   <div
     className="slds-form-element__control"
@@ -5928,7 +5819,7 @@ exports[`render combobox renders autocomplete combobox 1`] = `
           <input
             aria-autocomplete="list"
             aria-controls="listbox-id-01"
-            autoComplete="off"
+            autocomplete="off"
             className="slds-input slds-combobox__input slds-has-focus"
             id="combobox-id-01"
             onBlur={[Function]}
@@ -6058,7 +5949,7 @@ exports[`render combobox renders different styles of options in the listbox 1`] 
     className="slds-form-element__label"
     htmlFor="combobox-id-01"
   >
-    Relate to
+    Relate To
   </label>
   <div
     className="slds-form-element__control"
@@ -6079,13 +5970,13 @@ exports[`render combobox renders different styles of options in the listbox 1`] 
           <input
             aria-autocomplete={null}
             aria-controls="listbox-id-01"
-            autoComplete="off"
+            autocomplete="off"
             className="slds-input slds-combobox__input slds-has-focus slds-combobox__input-value"
             defaultValue="Accounts"
             id="combobox-id-01"
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder="Select an Option"
+            placeholder="Select an Option…"
             readOnly={true}
             role="textbox"
             type="text"
@@ -6290,7 +6181,7 @@ exports[`render combobox renders different styles of options in the listbox with
     className="slds-form-element__label"
     htmlFor="combobox-id-01"
   >
-    Relate to
+    Relate To
   </label>
   <div
     className="slds-form-element__control"
@@ -6311,13 +6202,13 @@ exports[`render combobox renders different styles of options in the listbox with
           <input
             aria-autocomplete={null}
             aria-controls="listbox-id-01"
-            autoComplete="off"
+            autocomplete="off"
             className="slds-input slds-combobox__input slds-has-focus slds-combobox__input-value"
             defaultValue="Accounts"
             id="combobox-id-01"
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder="Select an Option"
+            placeholder="Select an Option…"
             readOnly={true}
             role="textbox"
             type="text"
@@ -6800,7 +6691,7 @@ exports[`render combobox renders groups in a listbox 1`] = `
     className="slds-form-element__label"
     htmlFor="combobox-id-01"
   >
-    Relate to
+    Relate To
   </label>
   <div
     className="slds-form-element__control"
@@ -6821,12 +6712,12 @@ exports[`render combobox renders groups in a listbox 1`] = `
           <input
             aria-autocomplete={null}
             aria-controls="listbox-id-01"
-            autoComplete="off"
+            autocomplete="off"
             className="slds-input slds-combobox__input slds-has-focus"
             id="combobox-id-01"
             onBlur={[Function]}
             onFocus={[Function]}
-            placeholder="Select an Option"
+            placeholder="Select an Option…"
             readOnly={true}
             role="textbox"
             type="text"
@@ -7397,11 +7288,6 @@ exports[`render deprecated combobox renders a base combobox with closed options 
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -7450,11 +7336,6 @@ exports[`render deprecated combobox renders a base combobox with closed options 
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -8450,11 +8331,6 @@ exports[`render deprecated combobox renders a multi-entity combobox with focused
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -8503,11 +8379,6 @@ exports[`render deprecated combobox renders a multi-entity combobox with focused
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -8860,11 +8731,6 @@ exports[`render deprecated combobox renders a multi-entity combobox with options
                 xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
               />
             </svg>
-            <span
-              className="slds-assistive-text"
-            >
-              Press delete or backspace to remove
-            </span>
           </span>
         </span>
       </li>
@@ -8913,11 +8779,6 @@ exports[`render deprecated combobox renders a multi-entity combobox with options
                 xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
               />
             </svg>
-            <span
-              className="slds-assistive-text"
-            >
-              Press delete or backspace to remove
-            </span>
           </span>
         </span>
       </li>
@@ -8965,7 +8826,7 @@ exports[`render deprecated combobox renders a readonly combobox 1`] = `
               autoComplete="off"
               className="slds-input slds-combobox__input"
               id="combobox-unique-id-16"
-              placeholder="Select an Option"
+              placeholder="Select an Option…"
               readOnly={true}
               role="textbox"
               type="text"
@@ -9138,7 +8999,7 @@ exports[`render deprecated combobox renders a readonly combobox with closed opti
               className="slds-input slds-combobox__input slds-combobox__input-value"
               defaultValue="Option A"
               id="combobox-unique-id-21"
-              placeholder="Select an Option"
+              placeholder="Select an Option…"
               readOnly={true}
               role="textbox"
               type="text"
@@ -9311,7 +9172,7 @@ exports[`render deprecated combobox renders a readonly combobox with closed opti
               className="slds-input slds-combobox__input slds-combobox__input-value"
               defaultValue="2 Options Selected"
               id="combobox-unique-id-22"
-              placeholder="Select an Option"
+              placeholder="Select an Option…"
               readOnly={true}
               role="textbox"
               type="text"
@@ -9473,11 +9334,6 @@ exports[`render deprecated combobox renders a readonly combobox with closed opti
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -9508,11 +9364,6 @@ exports[`render deprecated combobox renders a readonly combobox with closed opti
                   xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                 />
               </svg>
-              <span
-                className="slds-assistive-text"
-              >
-                Press delete or backspace to remove
-              </span>
             </span>
           </span>
         </li>
@@ -9561,7 +9412,7 @@ exports[`render deprecated combobox renders a readonly combobox with focus 1`] =
               autoComplete="off"
               className="slds-input slds-combobox__input"
               id="combobox-unique-id-17"
-              placeholder="Select an Option"
+              placeholder="Select an Option…"
               readOnly={true}
               role="textbox"
               type="text"
@@ -9734,7 +9585,7 @@ exports[`render deprecated combobox renders a readonly combobox with open item f
               autoComplete="off"
               className="slds-input slds-combobox__input"
               id="combobox-unique-id-18"
-              placeholder="Select an Option"
+              placeholder="Select an Option…"
               readOnly={true}
               role="textbox"
               type="text"
@@ -9907,7 +9758,7 @@ exports[`render deprecated combobox renders a readonly combobox with open option
               className="slds-input slds-combobox__input slds-combobox__input-value"
               defaultValue="Option A"
               id="combobox-unique-id-19"
-              placeholder="Select an Option"
+              placeholder="Select an Option…"
               readOnly={true}
               role="textbox"
               type="text"
@@ -10080,7 +9931,7 @@ exports[`render deprecated combobox renders a readonly combobox with open option
               className="slds-input slds-combobox__input slds-combobox__input-value"
               defaultValue="2 Options Selected"
               id="combobox-unique-id-20"
-              placeholder="Select an Option"
+              placeholder="Select an Option…"
               readOnly={true}
               role="textbox"
               type="text"
@@ -10777,6 +10628,7 @@ exports[`render deprecated combobox renders an inline listbox combobox with clos
             />
             <button
               className="slds-button slds-button_icon slds-input__icon slds-input__icon_right"
+              onClick={[Function]}
               title="Remove selected option"
             >
               <svg
@@ -10979,11 +10831,6 @@ exports[`render deprecated combobox renders an inline listbox combobox with focu
                     xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                   />
                 </svg>
-                <span
-                  className="slds-assistive-text"
-                >
-                  Press delete or backspace to remove
-                </span>
               </span>
             </span>
           </li>
@@ -11032,11 +10879,6 @@ exports[`render deprecated combobox renders an inline listbox combobox with focu
                     xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                   />
                 </svg>
-                <span
-                  className="slds-assistive-text"
-                >
-                  Press delete or backspace to remove
-                </span>
               </span>
             </span>
           </li>
@@ -11259,11 +11101,6 @@ exports[`render deprecated combobox renders an inline listbox combobox with opti
                     xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                   />
                 </svg>
-                <span
-                  className="slds-assistive-text"
-                >
-                  Press delete or backspace to remove
-                </span>
               </span>
             </span>
           </li>
@@ -11312,11 +11149,6 @@ exports[`render deprecated combobox renders an inline listbox combobox with opti
                     xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#close"
                   />
                 </svg>
-                <span
-                  className="slds-assistive-text"
-                >
-                  Press delete or backspace to remove
-                </span>
               </span>
             </span>
           </li>
